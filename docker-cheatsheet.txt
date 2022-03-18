@@ -1,0 +1,29 @@
+Rodar imagem localmente (container aleatório)
+docker run imagem 
+
+Rodar imagem localmente e manter ela ativa em modo interação (permitir shell commands)
+docker run -ti imagemNome
+
+Rodar imagem localmente e manter ativa em segundo plano (modo desacoplado)
+docker run -dt imagemNome
+
+Criar container apartir de imagem
+docker run --name nomeContainer imagemNome
+
+Criar container apartir de imagem e manter em modo interação
+docker run -it --name containerNome imagemNome
+
+Iniciar container existente
+docker start containerNome
+
+Listar imagens locais
+docker image -ls
+
+Listar containers ativos
+docker container ls
+
+Listar todos os containers
+docker container ls -a
+
+Abre bash em um container em execução
+docker exec -ti containerName /bin/bash
